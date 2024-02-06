@@ -2,82 +2,139 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-#imageSection img {
+.top {
+    background-color: #001B2E;
+    color: white;
+}
+
+.top h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0px 20px 100px;
+    margin: 0;
+    text-align: left;
+}
+
+.top h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.mainImage img {
+    margin: 10px 100px 0px 100px;
     height: 240px;
-    width: 2000px;
 }
 
-section {
+.container {
+    margin: 10px 0px;
+    background-color: #F0F0F0;
+}
+
+.content {
+    margin: 0px 100px;
+    text-align: left;
+}
+
+.explanation {
+    margin: 10px 0px 0px;
+    background-color: #F0F0F0;;
+    color: black;
+    display: flex;
+    padding: 10px 100px;
+}
+
+.explanation .left {
+    text-align: left;
+}
+
+.explanation button {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 0px;
+    color: white;
+    font-weight: 700px;
+    background-color: #0062C4;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.explanation img {
+    width: 400px;
+    padding: 10px;
+}
+
+.search, .reserve {
+    margin: 10px 0px 0px;
+    background-color: #C1E0FF;
+    padding: 20px 90px;
+}
+
+.reserve {
     text-align: center;
+    padding: 10px;
 }
 
-#wrapper {
+.search input[type="submit"], .reserve input[type="submit"] {
+    background-color: #C1E0FF;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: #0062C4;
+    font-weight: 700;
+    font-size: 15px;
+    border-color: #0062C4;
+    border-width: 2px;
+    cursor: pointer;
+    margin: 0px 10px;
+  }
+
+.catalog, .news {
     height: auto;
     min-height: 100%;
-    padding-bottom: 120px;
+    padding: 0px 100px;
+    margin: 0;
 }
 
-section ul{
+.books img {
+    width: 150px;
+}
+
+.books ul {
     list-style-type: none;
-    padding: 0;
 }
 
-#catalog li {
+.books li {
     margin: 1rem 0;
+    display: flex;
+    align-items: center;
 }
 
-#catalog li span {
+.books li span {
     display: block;
 }
 
-.Title {
-    font-size: 18px;
-    font-weight: 700;
+section ul {
+    list-style-type: none;
+    padding: 0;
 }
-
-.BookID, .AvailableNTotal {
-    color: blue;
-}
-
-#reserve {
-    background-color: lightblue;
-    margin-bottom: 180px;
-}
-
-#search {
-    text-align: left;
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 section li {
     padding: 3px;
 }
 
-aside {
-    position: fixed;
-    right: 0;
-    background-color: #333;
-    opacity: 0.8;
-    color: white;
-    padding: 15px;
+.searchType2 ul{
+    display: flex;
 }
 
-aside ul {
-    list-style-type: square;
-    margin: 5px;
-    padding: 3px;
-}
-
-aside li {
-    margin: 5px;
+.searchType2 li {
+    margin-right: 10px;
 }
 
 nav {
-    background-color: #333;
+    padding: 0px 80px;
 }
 
 nav ul {
@@ -95,7 +152,7 @@ nav a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
@@ -105,11 +162,19 @@ nav a:hover {
 }
 
 footer {
-    height: 120px;
+    height: 70px;
     position: relative;
-    background-color: #333;
+    background-color: #001B2E;
     color: white;
-    text-align: center;
+    text-align: left;
     bottom: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0px 100px;
+    font-size: 14px;
 }

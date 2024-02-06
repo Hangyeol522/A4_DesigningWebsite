@@ -8,26 +8,33 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="home.html">The Vallejo Public Library</a></h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="findBooks.html">Find Books</a></li>
-            <li><a href="loanBooks.html">Loan Books</a></li>
-            <li><a href="register.html">Register</a></li>
-        </ul>
-    </nav>
-
-    <section id="imageSection">
-        <img src="https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png" width="900" height="240">
+    <section class="top">
+        <header>
+            <h1><a href="home.html">The Vallejo Public Library</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="findBooks.html">Search</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
     </section>
 
-    <section>
-        <h3>How to Loan Books</h3>
+    <section class="explanation">
+        <section class="left">
+            <h2>Loan books you want</h3>
+            <p>Please read and follow the steps to loan books</p>
+            <a href="findBooks.html"><button>Find Books</button></a>
+        </section>
+        <section class="right">
+            <img src="https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png">
+        </section>
+    </section>
+    
+    <section class="content">
+        <h3>How to Loan Books?</h3>
         <ol>
             <li>If you have a library card, you are able to request a book online if it's available.</li>
                 <ul>
@@ -39,8 +46,7 @@
         </ol>
     </section>
 
-    <section id="wrapper">
-        <br>
+    <section class="reserve">
         <form action="/search" method="get" id="reserve">
             <p>Library Card Number: <input type="text" id="userID" name="q" placeholder="Enter Library Card Number">
                 Book ID: <input type="text" id="bookID" name="p" placeholder="Enter Book ID"></p>
