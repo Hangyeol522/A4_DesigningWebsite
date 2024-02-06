@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#imageSection img {
+    height: 240px;
+    width: 2000px;
+}
+
+section {
+    text-align: center;
+}
+
+#wrapper {
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 120px;
+}
+
+section ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#catalog li {
+    margin: 1rem 0;
+}
+
+#catalog li span {
+    display: block;
+}
+
+.Title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.BookID, .AvailableNTotal {
+    color: blue;
+}
+
+#reserve {
+    background-color: lightblue;
+    margin-bottom: 180px;
+}
+
+#search {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+section li {
+    padding: 3px;
+}
+
+aside {
+    position: fixed;
+    right: 0;
+    background-color: #333;
+    opacity: 0.8;
+    color: white;
+    padding: 15px;
+}
+
+aside ul {
+    list-style-type: square;
+    margin: 5px;
+    padding: 3px;
+}
+
+aside li {
+    margin: 5px;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+footer {
+    height: 120px;
+    position: relative;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
