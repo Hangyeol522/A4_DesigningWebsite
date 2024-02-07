@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: helvetica;
     margin: 0;
     padding: 0;
     display: flex;
@@ -22,6 +22,30 @@ body {
 .top h1 a {
     text-decoration: none;
     color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 .mainImage img {
@@ -135,30 +159,6 @@ section li {
 
 nav {
     padding: 0px 80px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav li {
-    float: left;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #ddd;
-    color: black;
 }
 
 footer {
